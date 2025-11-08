@@ -1,0 +1,9 @@
+Transform (2d) and
+
+        translate(x,y)
+        translate(x) translateY(y)
+        translateZ(z)
+        rotate(angle) , rotateY(angle) rotateX(angle) rotateZ(angle)
+        scale(x,y) scaleX(x) scaleY(y) scaleZ(z)
+        skew( x-angle , y-angle) skewX(x-ngle) skewY(y-angle)
+        matrix()
