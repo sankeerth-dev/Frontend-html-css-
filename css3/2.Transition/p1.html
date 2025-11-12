@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width: 50%;
+            padding: 20px;
+            margin: 5px;
+            background-color:azure;
+            color: black;
+            transition-duration: width;
+            transition-duration: 2s;
+        }
+        p:hover{
+            width: 10%;
+            background-color: darkolivegreen;
+            color: white;
+        }
+        .txt1{
+            transition-delay: 3s;
+            transition-timing-function: ease;
+        }
+        .txt2{
+            transition-timing-function: ease-in;
+        }
+        .txt3{
+            transition-timing-function: ease-in-out;
+        }
+        .txt4{
+            transition-timing-function: ease-out;
+        }
+        .txt5{
+            transition-timing-function: linear;
+        }
+        .txt6{
+            transition-timing-function: steps(4);  /* steps(num) step-start,step-end */
+        }
+        .txt7{
+            transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);  /* custom cubic bezier  */
+        }
+    </style>
+</head>
+<body>
+    <h3>Transition</h3>
+    <div class="container">
+        <p class="txt1">para-1 ease</p>
+        <p class="txt2">para-2 ease-in</p>
+        <p class="txt3">para-3 ease-in-out</p>
+        <p class="txt4">para-4 ease-out</p>
+        <p class="txt5">para-5 linear</p>
+        <p class="txt6">para-6 steps</p>
+        <p class="txt7">para-7 cubic-bezier</p>
+    </div>
+</body>
+</html>
