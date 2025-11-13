@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 1px solid #222;
+            padding: 20px;
+            counter-reset: ch;
+        }
+        h2::before{
+            counter-increment: ch;
+            content: counter(ch);
+        }
+        h2{ counter-reset: tp;}
+        h4::before{
+            counter-increment: tp;
+            content: counter(ch) "." counter(tp) ".";
+            margin-left: 3rem;
+        }
+        h4{ counter-reset: st;}
+        p::before{
+            counter-increment: st;
+            content: counter(ch) "." counter(tp) "." counter(st) " ";
+            margin-left: 6rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Table of contents</h1>
+        <div class="box">
+            <h2>HTML</h2>
+                <h4>Header tags</h4>
+                    <p>h1-h6</p>
+                <h4>Paragraph and Format tags</h4>
+                <h4>List tags</h4>
+                    <p>order list</p>
+                    <p>unorder list</p>
+                    <p>description list</p>
+            <h2>CSS</h2>
+                <h4>Selectors</h4>
+                <h4>Colors</h4>
+                    <p>color name</p>
+                    <p>hexa decimal</p>
+                    <p>rgb and rgba</p>
+                <h4>Border</h4>
+            <h2>JavaScript</h2>
+                <h4>Basics</h4>
+                <h4>Operators</h4>
+                <h4>Conditional statements</h4>
+                <h4>Loops</h4>
+                    <p>For loop</p>
+                    <p>While loop</p>
+                    <p>do while loop</p>
+        </div>
+    </div>
+</body>
+</html>
