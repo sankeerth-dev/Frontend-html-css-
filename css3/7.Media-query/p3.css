@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.container .head,
+.container .foot{
+    height: 10%;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+}
+.container .block{
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+.block .colc1,
+.block .colc3
+{
+    background-color: yellow;
+    width: 10vw;
+}
+.block .colc2{
+    background-color: orangered;
+    width: 80vw;
+}
+/* mobile view */
+@media screen and (max-width:425px){
+    .block{
+        flex-wrap: wrap;
+    }
+    .block .colc1,
+    .block .colc2{
+        width: 100%;
+    }
+    .block .colc3{
+        width: 100%;
+        background-color: green;
+    }
+}

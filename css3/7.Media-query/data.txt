@@ -1,0 +1,32 @@
+media query related to mobile responsive view of web pages depdndinfg on the screen resolution (width x height) into px
+
+
+1. Wearable devices (Smart Watches).    >  300px
+2. Mobiles    
+3. Tab        
+4. Notebook PC
+5. Laptop
+6. Desktop
+7. 4k Devices (Large Screens)    
+
+
+
+Media query scale
+mobile-s = 320px
+mobile-m = 375px
+mobile-l = 425px
+
+Tab - 768px
+
+Laptop = 1024px
+Laptop-L = 1440px
+
+4K - 2560px
+
+properties of Media query:
+1. resolution
+2. pixel depth
+3. color depth
+4. orientation:
+    portrait
+    landscape

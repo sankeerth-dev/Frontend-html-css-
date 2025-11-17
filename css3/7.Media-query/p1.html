@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ box-sizing: border-box;}
+
+
+        body {
+            padding: 0;
+            width: 100%;
+            margin: auto;
+        }
+
+        .container {
+           width: 80%;
+              margin: auto;
+              display: flex;
+              margin: 20px;
+              align-items: center;
+                justify-content: flex-start;
+        }
+
+        .card {
+            text-align: justify;
+            margin: 1rem;
+            box-shadow: 5px 20px 40px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                
+            }
+
+            .card {
+                background-color: aquamarine;
+            }
+        }
+
+        @media(min-width: 769px) and (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .card {
+                background-color: lightcoral;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>meida querry</h1>
+
+    <section class="container">
+        <div class="card">
+            <div class="title">
+                <h4>product-1</h4>
+
+            </div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque repellendus tempora beatae. Delectus rerum laborum laudantium molestias nesciunt provident illo natus nostrum excepturi eum soluta, inventore, fugiat impedit qui possimus!
+
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="title">
+                <h4>product-2</h4>
+
+            </div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque repellendus tempora beatae. Delectus rerum laborum laudantium molestias nesciunt provident illo natus nostrum excepturi eum soluta, inventore, fugiat impedit qui possimus!
+                    
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="title">
+                <h4>product-3</h4>
+
+            </div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque repellendus tempora beatae. Delectus rerum laborum laudantium molestias nesciunt provident illo natus nostrum excepturi eum soluta, inventore, fugiat impedit qui possimus!
+                    
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <div class="card">
+            <div class="title">
+                <h4>product-4</h4>
+
+            </div>
+
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque repellendus tempora beatae. Delectus rerum laborum laudantium molestias nesciunt provident illo natus nostrum excepturi eum soluta, inventore, fugiat impedit qui possimus!
+                    
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
