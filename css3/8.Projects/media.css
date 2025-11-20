@@ -1,0 +1,37 @@
+@media screen and (max-width: 990px) {
+    #hero .container{
+        flex-direction: column;
+        max-width: 100%;
+    }
+    #hero img{
+        max-width: 100%;
+    }
+    #about,
+    #works,
+    #education,
+    #contact{
+        height: 100%;
+    }
+
+    #about .about-content{
+        flex-direction: column;
+    }
+    #works .works-content{
+        flex-direction: column;
+    }
+    #works .works-content .card{
+        width: 100%;
+    }
+    #education .education-content{
+        flex-direction: column;
+    }
+    #contact .contact-content{
+        flex-direction: column;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+}

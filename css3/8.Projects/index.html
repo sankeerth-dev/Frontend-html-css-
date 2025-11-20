@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- navigation menu -->
@@ -12,6 +14,9 @@
         <nav class="navbar">
             <div class="container">
                 <a href="index.html" class="logo">Portfolio</a>
+                <button class="btn menu-btn">
+                    <i class="fa fa-bars"></i>
+                </button>
                 <div class="menu">
                     <a href="#about">About</a>
                     <a href="#works">Works</a>
@@ -132,50 +137,109 @@
                 </div>
             </div>
         </section>
-        <!-- education -->
-         <section id="education">
-            <div class="container"><div class="title">
+       <!-- education -->
+        <section id="education">
+            <div class="container">
+                <div class="title">
                 <h2>Education</h2>
-            </div>
-        </div>
-        
-            <div class="education-content">
+
+                    </div>
+                <div class="education-content">
                 <div class="left-col">
                     <div class="card">
                         <h5>Masters Degree</h5>
-                        <h6>Xyz Institution.</h6>
+                        <h6>IIT BOMBAY.</h6>
                         <p><strong>2023-25</strong></p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
                     </div>
                     <div class="card">
                         <h5>Bachelors Degree</h5>
-                        <h6>Abc Institution.</h6>
+                        <h6>SAGAR INSTITUTE OF TTECHNOLOGY.</h6>
                         <p><strong>2021-23</strong></p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
                     </div>
                 </div>
-                <div class="rightcol"></div>
+
+
+                <div class="rightcol">
                 <div class="card">
                         <h5>Diploma</h5>
-                        <h6>Abc Institution.</h6>
+                        <h6>SURAJ INSTITUE OF TECHNOLOGY.</h6>
                         <p><strong>2018-21</strong></p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
                     </div>
                     <div class="card">
                         <h5>PUC</h5>
-                        <h6>Abc Institution.</h6>
+                        <h6>GOV PU COLLEGE.</h6>
                         <p><strong>2016-18</strong></p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
                     </div>
                     <div class="card">
                         <h5>SSLC</h5>
-                        <h6>Abc Institution.</h6>
+                        <h6>PRAGATHI COMPOSITE SCHOOL.</h6>
                         <p><strong>2014-16</strong></p>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
                     </div>
                 </div>
             </div>
+            
+        </div>
+        
+            
          </section>
+         <!-- contact -->
+        <section id="contact">
+            <div class="container">
+                <div class="title">
+                    <h2>Contact Me</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="left-col">
+                        <div class="card">
+                            <div class="card-body">
+                                <form method="post" autocomplete="off">
+                                    <div class="form-item">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" name="name" id="name" class="input-item" required>
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="mobile">Your Mobile Number</label>
+                                        <input type="number" name="mobile" id="mobile" class="input-item" required>
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="email">Your Email</label>
+                                        <input type="email" name="email" id="email" class="input-item" required>
+                                    </div>
+                                    <div class="form-item">
+                                        <button class="btn-sucess">Send</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-col">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.310730613435!2d77.53652207484181!3d12.992986387324278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d8ad89380bd%3A0xe619385693ac1684!2sBe%20Practical%20Tech%20Solutions!5e1!3m2!1sen!2sin!4v1763639359143!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <ul class="list">
+                            <li>
+                                <strong>Location:</strong>
+                                <span>Bengaluru</span>
+                            </li>
+                            <li>
+                                <strong>Email:</strong>
+                                <span>john@gmail.com</span>
+                            </li>
+                            <li>
+                                <strong>Mobile:</strong>
+                                <span>7676560258</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="foot">
+            <p>All Rights Reserved &copy; <span id="yr"></span></p>
+        </footer>
     <script src="./app.js"></script>
 </body>
 </html>

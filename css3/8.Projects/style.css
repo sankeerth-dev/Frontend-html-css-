@@ -25,10 +25,10 @@
  /* header */
  .head{
     width: 100%;
-    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
  }
  .navbar{
     background-color: var(--white);
@@ -147,7 +147,6 @@ p{
 #works .container{
     width: 80%;
     margin: auto;
-    height: 100vh;
     padding-top: 3rem;
 }
 #works .works-content{
@@ -162,3 +161,124 @@ p{
 #works .works-content .card img{
     width: 100%;
 }
+/* education */
+
+#education{
+    width: 100%;
+    height: 100%;
+}
+
+#education .container{
+    width: 80%;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+#education .education-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#education .education-content .left-col,
+#education .education-content .right-col {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#education .education-content  .card {
+    padding: 10px;
+    border-left: 2px solid var(--secondary);
+    margin-top: 1rem;
+    position: relative;
+}
+
+#education .education-content  .card::before{
+   content: "";
+   position: absolute;
+   top: -10px;
+    left:-11px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 2px solid var(--primary);
+}
+/* contact */
+#contact{
+    height: 100%;
+    width: 100%;
+}
+#contact .container{
+    width: 80%;
+    margin: auto;    
+}
+#contact .container .contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contact-content .left-col,
+.contact-content .right-col{
+    width: 100%;
+    padding: 20px;
+}
+
+.form-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.input-item {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid var(--dark);
+    outline: none;
+    border-radius: 6px;
+}
+.sucess{
+    background-color: green;
+}
+.primary{
+    background-color: var(--primary);
+}
+.btn{
+    text-decoration: none;
+}
+iframe{
+    width: 100%;
+    border-radius: 10px;
+    height: 25vh;
+}
+#contact .list {
+    list-style: none;
+    align-items: center;
+}
+#contact .list li{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+/* menu btn */
+.menu-btn{
+    display: none;
+}
+
+
