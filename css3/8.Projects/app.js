@@ -9,3 +9,12 @@ setInterval( function()  {
 // to update year with current year
 let yr = document.getElementById("yr");
 yr.innerText = new Date().getFullYear();
+
+
+// responsive menu toggle
+let menuBtn= document.querySelector(".menu-btn");
+let menu = document.querySelector(".menu");
+
+menuBtn.addEventListener("click",function(event){
+    menu.classList.toggle("active");
+});
