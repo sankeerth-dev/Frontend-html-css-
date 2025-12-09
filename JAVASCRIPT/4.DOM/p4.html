@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #result{
+            width: 500px;
+            height: 100%;
+            padding: 20px;
+            background-color: lightseagreen;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task</h1>
+    <!-- 
+        Marks of individual students
+            John = 87
+            Tom = 56
+            Sam = 96
+        create div block with id result ,
+        print the total marks in h1 tag and average in h3 tag in the block
+    -->
+        <button onclick="handler()">calculate results</button>
+        <div id="result"></div>
+        <script>
+            // let John = 87;
+            // let Tom = 56;
+            // let Sam = 96;
+            
+            // document.writeln(`<div>
+            //     <h1>Sum:${John + Tom + Sam}</h1>
+            //     <h3>Average:${(John + Tom + Sam) / 3}</h3>
+            //     </div>`);
+            function handler(){
+                var s1 = prompt("enter the marks of student 1");
+                var s2 = prompt("enter the marks of student 2");
+                var s3 = prompt("enter the marks of student 3");
+
+                var total = Number(s1) + Number(s2) + Number(s3);
+                var avg = total / 3;
+            document.getElementById("result").innerHTML = `<div> 
+                <h1>Sum:${total}</h1>
+                <h3>Average:${avg}</h3>
+                </div>`
+            }
+        </script>
+</body>
+</html>
