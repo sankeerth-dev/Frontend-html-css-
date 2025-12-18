@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>format (clipboard) events</h1>
+    <p>select,cut,copy,paste</p>
+    <div class="content">
+        <label for="">sample handling</label>
+        <textarea name="" id="" cols="30" rows="5" onselect="selHandler()" oncopy="copyHandler()">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id aliquam quaerat asperiores enim cupiditate iste consequuntur perspiciatis quibusdam quas totam exercitationem ea mollitia quo nihil ipsa neque, hic facere voluptate!
+        </textarea>
+    </div>
+    <hr>
+    <div class="content">
+        <label for="">sample heading</label>
+        <textarea name="" id="" cols="30" rows="5" onpaste="pasteHandler()" oncut="cutHandler()">
+            </textarea>
+    </div>
+    <script>
+        function selHandler(){
+            alert("content selected")
+        }
+        function copyHandler(){
+            alert("content copied")
+        }
+        function pasteHandler(){
+            alert("content pasted")
+        }
+        function cutHandler(){
+            alert("content is cut and ready to paste")
+        }
+    </script>
+</body>
+</html>
