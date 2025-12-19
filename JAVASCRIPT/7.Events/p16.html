@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>onsubmit and onreset</h1>
+    <h3 id="out"></h3>
+     <form id="POST" onsubmit="subHandler(event)" onreset="resetHandler(event)">
+        <label for="">Username</label>
+        <input type="text" name="user" id="user" required>
+        <label for="">password</label>
+        <input type="password" name="pass" id="pass" required>
+        <br><br>
+        <button type="submit">Login</button>
+        <input type="reset" value="Reset">
+     </form>
+     <script>
+        function subHandler(e){
+            e.preventDefault();     //to avoid page refresh
+            let user = document.getElementById("user").value;
+            let pass = document.getElementById("pass").value;
+
+            document.getElementById("out").innerText = `username = ${user} and password is ${pass}`;
+        }
+        function resetHandler(e){
+            alert('form input is cleared')
+            window.location.reload();
+        }
+     </script>
+</body>
+</html>

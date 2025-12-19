@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form events</h1>
+    <!-- blur and focus -->
+     <form id="myForm" onfocusin="addFocus(event)" onfocusout="removeFocus(event)">
+        <label for="">enter name</label>
+        <input type="text" name="name" id="name" required>
+        <label for="">password</label>
+        <input type="password" name="pass" id="pass" required>
+     </form>
+     <script>
+        // var form = document.getElementById('myForm');
+        function addFocus(event){
+            event.target.style.background = "#22d222";
+            event.target.style.borderColor = "#222222";
+            event.target.style.outline = "none";
+        }
+        function removeFocus(event){
+            event.target.style.background = "#ccc";
+            event.target.style.borderColor = "#ff2200"
+            event.target.style.outline = "none";
+        }
+     </script>
+</body>
+</html>
