@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="title">
+            <h1>validating name</h1>
+        </div>
+        <div class="box">
+            <form method="post" autocomplete="off" onsubmit="submitHandler(event)">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" id="name" class="form-input">
+                    <span id="nameStatus" ></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        let nameEl = document.getElementById("name");
+        let nStatus = document.getElementById("nameStatus");
+
+        function submitHandler(e){
+            e.preventDefault();
+            let name = nameEl.value;
+            let a=nameReg = /^[a-zA-Z ]+$/;
+            if(!name){
+                nStatus.innerText = "name is required";
+                nStatus.style.color = "red";
+            }else if (!nameReg.test(name)){
+                nStatus.innerText = "invalid name";
+                nStatus.style.color = "red";
+            }else{
+                nStatus.innerText = "valid name"
+                nStatus.style.color = "green";
+            }
+        }
+    </script>
+</body>
+</html>
